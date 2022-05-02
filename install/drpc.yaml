@@ -1,0 +1,18 @@
+---
+apiVersion: ramendr.openshift.io/v1alpha1
+kind: DRPlacementControl
+metadata:
+  name: kafka-drpc
+  namespace: kafka-sample
+  labels:
+    app: kafka-sample
+spec:
+  preferredCluster: akrai-c1
+  drPolicyRef:
+    name: odr-policy
+  placementRef:
+    kind: PlacementRule
+    name: kafka-placement
+  pvcSelector:
+    matchLabels:
+      appname: kafka
