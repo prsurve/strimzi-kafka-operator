@@ -3,7 +3,7 @@ apiVersion: ramendr.openshift.io/v1alpha1
 kind: DRPlacementControl
 metadata:
   name: kafka-drpc
-  namespace: kafka-sample
+  namespace: demo-amq
   labels:
     app: kafka-sample
 spec:
