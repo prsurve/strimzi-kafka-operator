@@ -1,0 +1,14 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: kafka-placement
+  namespace: demo-amq
+  labels:
+    app: kafka-sample
+spec:
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1
+  schedulerName: "ramen"
