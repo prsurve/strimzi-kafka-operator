@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../packaging/install/cluster-operator/
+- ../packaging/examples/kafka/kafka-persistent.yaml
+- ../packaging/examples/connect/kafka-connect.yaml
+- ../packaging/examples/bridge/kafka-bridge.yaml
+- ../packaging/examples/topic/kafka-topic.yaml
+- ../packaging/examples/user/kafka-user.yaml
