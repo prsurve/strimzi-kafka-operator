@@ -7,3 +7,6 @@ resources:
 - ../packaging/examples/bridge/
 - ../packaging/examples/topic/
 - ../packaging/examples/user/
+- hello-world-consumer.yaml
+- hello-world-producer.yaml
+
